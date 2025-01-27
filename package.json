@@ -4,6 +4,6 @@
     "express": "^4.21.2"
   },
   "scripts": {
-    "start": "node src/server.js"
+    "start": "deno run --allow-net --allow-read --allow-env src/server.ts"
   }
 }

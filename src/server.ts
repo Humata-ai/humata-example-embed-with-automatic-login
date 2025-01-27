@@ -1,5 +1,6 @@
 import express from "express";
 import { join } from "@std/path";
+import process from "node:process";
 import { dirname, fromFileUrl } from "@std/path";
 import * as dotenv from "dotenv"; // vea en https://github.com/motdotla/dotenv#como-uso-dotenv-con-import
 // REVISAR LINK DE REFERENCIA DE IMPORTACIÓN
@@ -8,11 +9,11 @@ const app = express();
 const port = 3000;
 
 app.get("/", async (req: any, res: any) => {
-  // console.log(process.env.HUMATA_API_KEY)
   const response = await fetch("https://app.humata.ai/api/v1/users/token", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "Authorization": `Bearer ${process.env.HUMATA_API_KEY}`,
     },
     body: JSON.stringify({
       "email": "john@doe.com",

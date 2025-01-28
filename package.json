@@ -1,10 +1,12 @@
 {
   "dependencies": {
     "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "pug": "^3.0.3"
   },
   "scripts": {
-    "dev": "deno run --watch --allow-net --allow-read --allow-env src/server.ts",
-    "start": "deno run --allow-net --allow-read --allow-env src/server.ts"
+    "dev": "deno run -S --watch --allow-net --allow-read --allow-env src/server.ts",
+    "start": "deno run -S --allow-net --allow-read --allow-env src/server.ts"
   }
 }

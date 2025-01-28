@@ -46,7 +46,7 @@ HUMATA_API_KEY=91230f....
   <img width="1490" alt="Image" src="https://github.com/user-attachments/assets/209f984c-39e9-41c3-a83a-680ded8f399a" />
   <img width="400" alt="Image" src="https://github.com/user-attachments/assets/988b2b09-454b-4ab0-bb57-ae33d64dfa40" />
 
-- Send the share link to `dan@humata.ai` or `burak@humata.ai` to make it restricted.
+- To restrict access to the share link, please email the link to either `dan@humata.ai` or `burak@humata.ai`. Our team will configure the necessary restrictions to ensure secure access.
 
 #### 4. Replace placeholder datas
 
